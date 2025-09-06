@@ -2,5 +2,3 @@
 *.tar
 *.gz
 *.code-workspace
-/build/*
-/distr/*
