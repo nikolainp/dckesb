@@ -31,9 +31,9 @@ if [[ $1 != "clean" ]] && [[ $1 != "image" ]] ; then
 fi
 
 if [[ $1 == "clean" ]]; then
-    printf "${_LWHT}Сброс дерева сборки...${_NA}\n"
+    printf "${_LWHT}Сleanup build tree...${_NA}\n"
     rm -rf ./build/
-    printf "${_LGRN}Готово!${_NA}\n"
+    printf "${_LGRN}Done.${_NA}\n"
     exit 0
 fi
 
@@ -51,5 +51,6 @@ cp ./dckesb.Dockerfile ./build/Dockerfile
 cd ./build
 docker build -t esb .
 
+printf "${_LGRN}Done.${_NA}\n"
 
 
